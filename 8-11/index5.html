@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Task # 05</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script>
+		<!-- Task Number Five 5 -->
+
+		document.write("<h1>Task Number Five</h1>")
+		var signalColor = prompt("Insert Any Signal Color", "red yellow OR green");
+		var msg ;
+
+		if (signalColor === "red"){
+			msg = "vehicles must stop";
+		}
+		else if(signalColor === "yellow"){
+			msg = "vehicles should get ready to move";
+		}
+		else if(signalColor === "green"){
+			msg = "vehicles can move now";
+		}
+		document.write(msg);
+
+	</script>
+</head>
+<body>
+    <a href="index.html">Back To Main Page</a>
+</body>
+</html>

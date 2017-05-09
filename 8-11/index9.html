@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Task # 09</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script>
+		<!-- Task Number Nine 09 -->
+
+		document.write("<h1>Task Number Nine</h1>");
+		
+		var sbjOne = +prompt("Inser Your HTML Marks", "HTML Marks");
+		var sbjTwo = +prompt("Inser Your CSS1 Marks", "CSS1 Marks");
+		var sbjThree = +prompt("Inser Your CSS2 Marks", "CSS2 Marks");
+
+		var totalMarks = 300;
+		var obtainMarks = sbjOne + sbjTwo + sbjThree;
+		var percentage = (obtainMarks*100) / totalMarks;
+
+		document.write("<h2>Mark Sheet...</h2>")
+
+		document.write("<br>Total Marks:   " + totalMarks);
+		document.write("<br>Obtain Marks:   " + obtainMarks);
+		document.write("<br>Percentage:   " + percentage + "%");
+
+		if (percentage >= 80 ){
+			document.write("<br>Grade:   A-One")
+			document.write("<br>Remarks:   Excellant")
+		}else if (percentage >= 70 ){
+			document.write("<br>Grade:   A")
+			document.write("<br>Remarks:   Good")
+		}else if (percentage >= 60 ){
+			document.write("<br>Grade:   B")
+			document.write("<br>Remarks:   You Need To Improve")
+		}else if (percentage < 60 ){
+			document.write("<br>Grade:   Fail")
+			document.write("<br>Remarks:   Sorry You Are Failed...")
+		}
+
+
+	</script>
+</head>
+<body>
+    <a href="index.html">Back To Main Page</a>
+</body>
+</html>

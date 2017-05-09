@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Task # 10</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script>
+		<!-- Task Number Ten 10 -->
+
+		document.write("<h1>Task Number Ten</h1>")
+		
+		var item1 = prompt("Name Of First Item", "Mobile");
+		var item2 = prompt("Name Of Second Item", "Laptop");
+		var itemPrice1 = +prompt("Price Of First Item", "5000");
+		var itemPrice2 = +prompt("Price Of First Item", "25000");
+		var itemQty1 = +prompt("Order Quentity Of First Item", "02");
+		var itemQty2 = +prompt("Order Quentity Of Second Item", "01");
+		var shippingCharges = +prompt("Shipping Charges...");
+
+		document.write("Item 1: " + item1 + "<br>");
+		document.write(item1 + " Price: " + itemPrice1 + "<br>");
+		document.write(item1 + " Quentity: " + itemQty1 + "<br>");
+		
+		document.write("Item 2: " + item2 + "<br>");
+		document.write(item2 + " Price: " + itemPrice2 + "<br>");
+		document.write(item2 + " Quentity: " + itemQty2 + "<br>");
+		document.write("Shipping Charges: " + shippingCharges + "<br><br><br>");
+		
+		var itemPrice1 = itemPrice1*itemQty1;
+		var itemPrice2 = itemPrice2*itemQty2;
+		
+		var totalPrice = itemPrice1 + itemPrice2 + shippingCharges;
+
+		document.write("Total cost of your order: " + totalPrice + "PKR <br>");
+		
+		if(totalPrice > 2000){
+			totalPrice = totalPrice - ((totalPrice*10)/100);
+			document.write("Total cost of your order with 10% discount: " + totalPrice + "PKR <br>");
+		}else{
+			document.write("Total cost of your order without discount: " + totalPrice + "PKR <br>");
+		}
+	
+
+
+	</script>
+</head>
+<body>
+    <a href="index.html">Back To Main Page</a>
+</body>
+</html>

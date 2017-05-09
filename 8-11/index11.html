@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Task # 11</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script>
+		// Task Number Eleven 11 (Guess Game)
+		
+		document.write("<h1>Task Number Eleven</h1>")
+		var secretNum = 4;
+		
+		var userInput = +prompt("Type Secret Number (Ranging from 1 to 10)");
+		
+		if(userInput === 4){
+			document.write("Bingo! Correct Answer..")
+		}else if(userInput === 3 || userInput === 5){
+			document.write("Close enough to the correct answer");
+		}else{
+			document.write("Sorry! Try Again..")
+		}
+
+	
+
+
+	</script>
+</head>
+<body>
+    <a href="index.html">Back To Main Page</a>
+</body>
+</html>

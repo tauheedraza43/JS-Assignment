@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Task # 14</title>
+	<link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <h1>Task Number Fourteen</h1>
+	<form action="" method="">
+		<h3>Insert Data For Check Data Type..</h3>
+		<input type="text" id="userInput" placeholder="Insert Data" />
+		<input type="submit" onclick="dataType()" value="Check Now" />
+		<p id="result"></p>
+	</form>
+	
+	
+	
+	<!-- <p id="slowLoris">
+	Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+	<a href="#" onClick="expandLoris();"><em>Click for more.</em></a>
+	</p> -->
+
+	
+<!-- 
+	function expandLoris() {
+		var expandedParagraph = "Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time.	Slow lorises have a toxic bite, a rare trait among mammals.";
+		
+		document.getElementById("slowLoris").innerHTML = expandedParagraph;
+	}
+ -->
+	<script>
+	
+		<!-- Task Number Fourteen -->
+	
+
+		var userInput = document.getElementById(userInput).value;
+		
+		
+		
+		function dataType(){
+			var result = "Data Type Of Your Input is " + typeof userInput;
+			
+			document.getElementById("result").innerHTML = result;
+		}
+
+	
+	
+
+
+	</script>
+	
+	<a href="index.html">Back To Main Page</a>
+	
+</body>
+</html>
