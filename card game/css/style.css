@@ -1,0 +1,134 @@
+
+*{margin: 0; padding: 0;}
+body{
+    background: url('../images/bg.jpg');
+    text-align: center;
+}
+#container{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px 10px;
+}
+img{
+    height: 250px;
+    width: 175px;
+}
+
+
+h1{
+    font-size: 50px;
+    color: maroon;
+    margin: 10px 0;
+}
+p{
+    font-size: 25px;
+    color: black;
+}
+img{
+    /*-webkit-transition: 1s;*/
+}
+img:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 15px black;
+    /*-webkit-transform: rotateY(180deg);*/
+}
+
+#bright{
+    color: antiquewhite;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+.left{
+    width: 50%;
+    float: left;
+}
+strong{
+    font-size: 35px;
+    color: maroon;
+    line-height: 45px;
+}
+
+#time{
+    width: auto;
+    line-height: 40px;
+    background-color: saddlebrown;
+    color: white;
+    font-size: 25px;
+    font-family: Hobo Std;
+    position: relative;
+    top: 0px; 
+    padding: 0 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+h2{
+    background: gray;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+.result{
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 250px;
+}
+.result > a{
+    background: gray;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 5px 5px 15px black;
+    text-decoration: none;
+}
+.result > a:hover{
+    color: brown;
+}
+
+
+#life-line > img{
+    height: 50px;
+    width: 50px;
+}
+#life-line > img{
+    box-shadow: 0 0 0;
+    cursor: auto;
+}
+
+table{
+    clear: both;
+    margin: 0 auto;
+}
+td{
+    padding: 5px 10px;
+}
+        
+footer{
+    height: 120px;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    border-top: 5px solid darkslategray;
+    background-color: maroon;
+    color: white;
+}
+footer p{
+    background-color: none;
+    margin-top: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 20px 0;
+}
+footer > p > a{
+    font-size: 20px;
+    color: white ;
+    font-style: bold;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    color: coral;
+}
