@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    color: violet;
+    line-height: 70px;
+}
+
+
+ul {
+    margin: 0;
+    padding: 15px 0;
+}
+
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 40px 10px 40px;
+    list-style: none;
+    background: #eee;
+    font-size: 18px;
+    line-height: 24px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+
+ul li:hover {
+    background: #ddd;
+}
+
+
+ul li.checked {
+    background: plum;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 16px;
+}
+
+.close:hover {
+    background-color: purple;
+    color: white;
+}
+
+
+.header {
+    background-color: #f44336;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+form{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#myInput {
+    border: none;
+    float: left;
+    width: 80%;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 38px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #fff;
+}
+#myInput:focus{
+    border-bottom: 3px solid plum;
+    outline: none;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 0 10px;
+    width: 20%;
+    /*float: right;*/
+    background: #d9d9d9;
+    color: #555;
+    font-size: 16px;
+    line-height: 38px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.addBtn:hover {
+    background-color: plum;
+    color: white;
+}
+
+
+strong{
+    font-size: 35px;
+    color: plum;
+    line-height: 45px;
+    margin: 0 auto;
+}
+
+#bright{
+    color: plum;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}   
+
+
+footer{
+    height: 120px;
+    width: 100%;
+    top: 520px;
+    text-align: center;
+    border-top: 5px solid purple;
+    background-color: orchid;
+    color: white;
+    position: fixed;
+    
+}
+footer p{
+    background-color: none;
+    margin-top: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 20px 0;
+}
+footer > p > a{
+    font-size: 20px;
+    color: white ;
+    font-style: bold;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    color: purple;
+}
